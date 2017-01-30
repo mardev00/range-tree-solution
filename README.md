@@ -12,8 +12,8 @@ Class RangeTreeTest is provided to test the algorithm and can be extended to add
 
 SAMPLE TEST CASES
 
-If the input = [08500,08540] [08520,08560] [08621,08635]
-Then the output should be = [08500, 08560] [08621,08635] 
+If the input = [98500,08540] [98520,98560] [98621,98635]
+Then the output should be = [98500, 98560] [98621,98635] 
 
 If the input = [94133,94133] [94200,94299] [94600,94699]
 Then the output should be = [94133,94133] [94200,94299] [94600,94699] 
