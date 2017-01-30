@@ -1,4 +1,4 @@
-# WSI Coding Challenge
+# range tree algorithm
 
 The project uses maven and it produces a jar file that can be built using the following command:
   mvn clean install
