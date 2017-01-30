@@ -14,7 +14,7 @@ SAMPLE TEST CASES
 
 If the input = [08500,08540] [08520,08560] [08621,08635]
 Then the output should be = [08500, 08560] [08621,08635] 
-~                                                                     
+
 If the input = [94133,94133] [94200,94299] [94600,94699]
 Then the output should be = [94133,94133] [94200,94299] [94600,94699] 
 
