@@ -171,7 +171,8 @@ public class RangeTree {
 	}
 
 	/**
-	 * readRanges method visits the nodes of the tree "In Order" and formats each elament in the collection for printing
+	 * readRanges method visits the nodes of the tree "In Order" and formats
+	 * each element in the collection for printing
 	 * 
 	 * @param current
 	 * @return List<String>
