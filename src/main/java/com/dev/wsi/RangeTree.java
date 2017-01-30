@@ -193,10 +193,4 @@ public class RangeTree {
 		return ranges;
 	}
 
-	public static void main(String args[]) {
-		RangeTree testTree1 = new RangeTree();
-		RangeTree testTree2 = new RangeTree();
-
-	}
-
 }
