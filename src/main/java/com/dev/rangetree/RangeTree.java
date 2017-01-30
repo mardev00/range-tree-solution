@@ -1,4 +1,4 @@
-package com.dev.wsi;
+package com.dev.rangetree;
 
 import java.util.ArrayList;
 import java.util.List;
