@@ -31,8 +31,9 @@ class Node {
 }
 
 /**
- * Class RangeTree uses a BST data structure to store zip code ranges that in turn maybe combined
- * for efficient storage and removal
+ * Class RangeTree uses a BST data structure to store zip code ranges that in
+ * turn maybe combined for efficient storage and removal
+ * 
  * @author martinarmenta
  *
  */
@@ -102,13 +103,7 @@ public class RangeTree {
 				current.right = new Node(x, y, current);
 			} else
 				insert(x, y, current.right);
-		}
-		// // first check parent
-		// else if(current.parent.lo>= x && current.parent.hi >= y && y >=
-		// current.lo) {
-		//
-		// }
-		else if (y >= current.lo && x <= current.lo) {
+		} else if (y >= current.lo && x <= current.lo) {
 			// node overlaps to the left so we need to update lower bound of
 			// range
 			System.out.println("Updating Node: " + current.lo + "," + current.hi);
@@ -128,7 +123,7 @@ public class RangeTree {
 	}
 
 	/**
-	 * method updateLeft Recusively update left sub-tree
+	 * method updateLeft recursively updates left sub-tree
 	 * 
 	 * @param current
 	 */
@@ -152,12 +147,12 @@ public class RangeTree {
 	}
 
 	/**
-	 * method updateRight Recusively update left sub-tree
+	 * method updateRight Recusively update right sub-tree
 	 * 
 	 * @param current
 	 */
 	private void updateRight(Node current) {
-		// if left node is in range then delete and update
+		// if right node is in range then delete and update
 		if (current == null)
 			return;
 		else {
@@ -176,8 +171,7 @@ public class RangeTree {
 	}
 
 	/**
-	 * readRanges method visits the nodes of the tree "In Order" and prints the
-	 * corresponding values
+	 * readRanges method visits the nodes of the tree "In Order" and formats each elament in the collection for printing
 	 * 
 	 * @param current
 	 * @return List<String>
@@ -186,8 +180,6 @@ public class RangeTree {
 		if (current == null)
 			return null;
 		readRanges(current.left);
-		// is there an overlap to the left?
-		// if(current)
 		ranges.add("[" + current.lo + "," + current.hi + "] ");
 		readRanges(current.right);
 		return ranges;
